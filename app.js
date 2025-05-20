@@ -1,20 +1,32 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const dotenv = require('dotenv');
+const express = require("express");
+const dotenv = require("dotenv");
+const connectDB = require("./config/db");
 
+// Load environment variables
 dotenv.config();
+
+// Connect to MongoDB
+connectDB();
+
+// Initialize express app
 const app = express();
+app.use(express.json()); // To parse JSON bodies
 
-app.use(express.json());
+// Import Routes
+const authRoutes = require("./routes/authRoutes");
+const activityRoutes = require("./routes/activityRoutes");
 
-app.get('/', (req, res) => {
-  res.send('API is working...');
+// Use Routes
+app.use("/api/auth", authRoutes);
+app.use("/api/activities", activityRoutes);
+
+// Home route
+app.get("/", (req, res) => {
+  res.send("Welcome to the Activity Booking API 🎉");
 });
 
-mongoose
-  .connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log('Connected to MongoDB');
-    app.listen(process.env.PORT, () => console.log(`Server running on port ${process.env.PORT}`));
-  })
-  .catch((err) => console.error('MongoDB connection error:', err));
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
