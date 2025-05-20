@@ -6,6 +6,8 @@ const authenticate = require("../middlewares/authMiddleware");
 
 router.get("/activities", getActivities);
 
+router.post("/activities", createActivity);
+
 router.post("/book/:id", authenticate, bookActivity);
 
 router.get("/my-bookings", authenticate, getMyBookings);

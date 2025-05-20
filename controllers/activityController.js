@@ -10,6 +10,16 @@ exports.getActivities = async (req, res) => {
   }
 };
 
+exports.createActivity = async (req, res) => {
+  try {
+    const activity = new Activity(req.body);
+    await activity.save();
+    res.status(201).json(activity);
+  } catch (error) {
+    res.status(400).json({ message: "Error creating activity", error });
+  }
+};
+
 
 exports.bookActivity = async (req, res) => {
   try {
