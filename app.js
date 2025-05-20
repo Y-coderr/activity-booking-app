@@ -16,6 +16,7 @@ app.use(express.json()); // To parse JSON bodies
 const authRoutes = require("./routes/authRoutes");
 const activityRoutes = require("./routes/activityRoutes");
 
+
 // Use Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/activities", activityRoutes);

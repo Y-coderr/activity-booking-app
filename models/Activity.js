@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const activitySchema = new mongoose.Schema({
-  title: { type: String, required: true },
+  title: String,
   description: String,
   location: String,
-  dateTime: { type: Date, required: true },
+  date: Date
 });
 
 module.exports = mongoose.model("Activity", activitySchema);
