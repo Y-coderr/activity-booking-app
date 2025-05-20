@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { activityBookingValidation } = require("../middlewares/validationMiddleware");
-const { getActivities, bookActivity, getMyBookings } = require("../controllers/activityController");
+const { getActivities, bookActivity, getMyBookings , createActivity} = require("../controllers/activityController");
 const authenticate = require("../middlewares/authMiddleware");
 
 router.get("/activities", getActivities);

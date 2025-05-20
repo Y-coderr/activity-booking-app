@@ -1,6 +1,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
+const authRoutes = require("./routes/authRoutes.js");
+const activityRoutes = require("./routes/activityRoutes.js");
 
 // Load environment variables
 dotenv.config();
@@ -13,8 +15,7 @@ const app = express();
 app.use(express.json()); // To parse JSON bodies
 
 // Import Routes
-const authRoutes = require("./routes/authRoutes.js");
-const activityRoutes = require("./routes/activityRoutes.js");
+
 
 const cors = require("cors");
 app.use(cors());
