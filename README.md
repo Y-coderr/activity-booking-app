@@ -5,6 +5,28 @@ A Backend **Node.js + MongoDB** application that allows users to **register**, *
 ---
 
 ## 📸 Screenshots
+<img width="1470" alt="Screenshot 2025-05-20 at 4 29 09 PM" src="https://github.com/user-attachments/assets/0a58f842-1fad-400e-9fce-5b471d638710" />
+
+<img width="1470" alt="Screenshot 2025-05-20 at 4 29 23 PM" src="https://github.com/user-attachments/assets/71567737-d501-4510-82b4-f90b630d3d63" />
+
+<img width="1470" alt="Screenshot 2025-05-20 at 4 32 04 PM" src="https://github.com/user-attachments/assets/989dab82-684f-4fa2-a1b6-fbc998bc2396" />
+
+<img width="1469" alt="Screenshot 2025-05-20 at 4 33 55 PM" src="https://github.com/user-attachments/assets/74d9320e-1cf6-44a7-8b53-7eb75d7ee676" />
+
+<img width="1470" alt="Screenshot 2025-05-20 at 5 27 17 PM" src="https://github.com/user-attachments/assets/05089d30-e908-4ffa-b61a-f1cc65c2b9dd" />
+
+<img width="1470" alt="Screenshot 2025-05-20 at 5 27 35 PM" src="https://github.com/user-attachments/assets/ff9b74dc-de33-4aa5-84b6-575623eb2a4c" />
+
+<img width="1349" alt="Screenshot 2025-05-20 at 5 55 41 PM" src="https://github.com/user-attachments/assets/61690833-48ab-46aa-adf8-b4e3efdba6a1" />
+
+<img width="1406" alt="Screenshot 2025-05-20 at 5 55 58 PM" src="https://github.com/user-attachments/assets/8c32fd6e-beb7-4492-a5a4-bcc37aa96114" />
+
+
+
+
+
+
+
 
 
 
