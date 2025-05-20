@@ -13,8 +13,16 @@ const app = express();
 app.use(express.json()); // To parse JSON bodies
 
 // Import Routes
-const authRoutes = require("./routes/authRoutes");
-const activityRoutes = require("./routes/activityRoutes");
+const authRoutes = require("./routes/authRoutes.js");
+const activityRoutes = require("./routes/activityRoutes.js");
+
+const cors = require("cors");
+app.use(cors());
+
+app.use((req, res, next) => {
+  console.log(`Incoming request: ${req.method} ${req.url}`);
+  next();
+});
 
 
 // Use Routes
@@ -23,7 +31,7 @@ app.use("/api/activities", activityRoutes);
 
 // Home route
 app.get("/", (req, res) => {
-  res.send("Welcome to the Activity Booking API 🎉");
+  res.send("Welcome to the Activity Booking API ");
 });
 
 // Start server

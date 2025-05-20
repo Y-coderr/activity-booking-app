@@ -1,7 +1,6 @@
 const Activity = require("../models/Activity");
 const Booking = require("../models/Booking");
 
-// GET /api/activities
 exports.getActivities = async (req, res) => {
   try {
     const activities = await Activity.find();
@@ -11,7 +10,7 @@ exports.getActivities = async (req, res) => {
   }
 };
 
-// POST /api/activities/book/:id
+
 exports.bookActivity = async (req, res) => {
   try {
     const activityId = req.params.id;
